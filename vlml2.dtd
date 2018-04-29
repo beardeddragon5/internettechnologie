@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--- Diese DTD beschreibt den Aufbau der MarkUp Language zur Vorlesungsbeschreibung -->
+<!ELEMENT Vorlesung (Titel, Hochschule+, SWS, Semester, Kapitel+, Quelle+)>
+  <!ELEMENT Titel (#PCDATA)>
+  <!ELEMENT Hochschule (#PCDATA)>
+  <!ELEMENT SWS (#PCDATA)>
+  <!ELEMENT Semester (#PCDATA)>
+  <!ELEMENT Kapitel (Name,Termin+)>
+    <!ATTLIST Kapitel nummer CDATA #REQUIRED>
+    <!ATTLIST Kapitel quelle IDREF #REQUIRED>
+    <!ATTLIST Kapitel bewertung CDATA "1">
+
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Termin (#PCDATA)>
+
+  <!ELEMENT Quelle (Autor+,Titel)*>
+    <!ATTLIST Quelle quellenID ID #REQUIRED>
+    <!ATTLIST Quelle type (Monographie|Artikel|Dissertation|Abschlussarbeit) #REQUIRED>
+    <!ELEMENT Autor (#PCDATA)>

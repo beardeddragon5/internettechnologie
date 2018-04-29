@@ -1,0 +1,179 @@
+    _          __             _            _       
+   / \  _   _ / _| __ _  __ _| |__   ___  / | __ _ 
+  / _ \| | | | |_ / _` |/ _` | '_ \ / _ \ | |/ _` |
+ / ___ \ |_| |  _| (_| | (_| | |_) |  __/ | | (_| |
+/_/   \_\__,_|_|  \__, |\__,_|_.__/ \___| |_|\__,_|
+                  |___/                            
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0
+Accept-Charset: utf-8
+Host: httpbin.org
+Connection: close
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sun, 29 Apr 2018 15:56:26 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 12144
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+X-Powered-By: Flask
+X-Processed-Time: 0
+    _          __             _            _ _     
+   / \  _   _ / _| __ _  __ _| |__   ___  / | |__  
+  / _ \| | | | |_ / _` |/ _` | '_ \ / _ \ | | '_ \ 
+ / ___ \ |_| |  _| (_| | (_| | |_) |  __/ | | |_) |
+/_/   \_\__,_|_|  \__, |\__,_|_.__/ \___| |_|_.__/ 
+                  |___/                            
+POST /post HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Connection: close
+Host: httpbin.org
+
+organisation=HawLA&name=MaRa
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sun, 29 Apr 2018 15:56:26 GMT
+Content-Type: application/json
+Content-Length: 360
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+X-Powered-By: Flask
+X-Processed-Time: 0
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "name": "MaRa", 
+    "organisation": "HawLA"
+  }, 
+  "headers": {
+    "Connection": "close", 
+    "Content-Length": "28", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org"
+  }, 
+  "json": null, 
+  "origin": "95.91.254.53", 
+  "url": "http://httpbin.org/post"
+}
+    _          __             _            ____  
+   / \  _   _ / _| __ _  __ _| |__   ___  |___ \ 
+  / _ \| | | | |_ / _` |/ _` | '_ \ / _ \   __) |
+ / ___ \ |_| |  _| (_| | (_| | |_) |  __/  / __/ 
+/_/   \_\__,_|_|  \__, |\__,_|_.__/ \___| |_____|
+                  |___/                          
+
+well-formed: https://moodle.haw-landshut.de/pluginfile.php/138027/course/section/39531/Internettechnologien%20%28Khelil%29%202018.pdf#page=52
+
+<?xml version="1.0"?>
+<!DOCTYPE Vorlesung SYSTEM "vlml.dtd">
+<Vorlesung>
+  <Titel>Programmieren</Titel>
+  <Semester>Sommersemester</Semester>
+  <Hochschule>HAW Landshut</Hochschule>
+  <SWS>1</SWS>
+  <?myTool align=left?>
+  <!--  Anweisung an myTool -->
+  <Kapitel nummer="1" quelle="Q1">
+    <Name>Einf&#xFC;hrung</Name>
+    <Termin>1</Termin>
+  </Kapitel>
+  <Kapitel nummer="2">
+    <Name>Datentypen</Name>
+    <Termin>2</Termin>
+  </Kapitel>
+  <Kapitel nummer="3">
+    <Name>Funktionen</Name>
+    <Termin>3</Termin>
+  </Kapitel>
+  <Kapitel nummer="4">
+    <Name>Pointer</Name>
+    <Termin>4</Termin>
+  </Kapitel>
+  <Quelle quellenID="Q1">
+    <Autor>Ich</Autor>
+    <Titel>Ein lustiges Buch</Titel>
+  </Quelle>
+</Vorlesung>
+    _          __             _            ____      
+   / \  _   _ / _| __ _  __ _| |__   ___  |___ \ ___ 
+  / _ \| | | | |_ / _` |/ _` | '_ \ / _ \   __) / _ \
+ / ___ \ |_| |  _| (_| | (_| | |_) |  __/  / __/  __/
+/_/   \_\__,_|_|  \__, |\__,_|_.__/ \___| |_____\___|
+                  |___/                              
+<?xml version="1.0"?>
+<!DOCTYPE Vorlesung SYSTEM "vlml2.dtd">
+<Vorlesung>
+  <Titel>Programmieren</Titel>
+  <Hochschule>HAW Landshut</Hochschule>
+  <SWS>1</SWS>
+  <Semester>Sommersemester</Semester>
+  <?myTool align=left?>
+  <!--  Anweisung an myTool -->
+  <Kapitel nummer="1" quelle="Q1">
+    <Name>Einf&#xFC;hrung</Name>
+    <Termin>1</Termin>
+  </Kapitel>
+  <Kapitel nummer="2" quelle="Q1">
+    <Name>Datentypen</Name>
+    <Termin>2</Termin>
+  </Kapitel>
+  <Kapitel nummer="3" quelle="Q1">
+    <Name>Funktionen</Name>
+    <Termin>3</Termin>
+  </Kapitel>
+  <Kapitel nummer="4" quelle="Q1">
+    <Name>Pointer</Name>
+    <Termin>4</Termin>
+  </Kapitel>
+  <Quelle quellenID="Q1" type="Artikel">
+    <Autor>Ich</Autor>
+    <Titel>Ein lustiges Buch</Titel>
+  </Quelle>
+</Vorlesung>
+    _          __             _            _____ 
+   / \  _   _ / _| __ _  __ _| |__   ___  |___ / 
+  / _ \| | | | |_ / _` |/ _` | '_ \ / _ \   |_ \ 
+ / ___ \ |_| |  _| (_| | (_| | |_) |  __/  ___) |
+/_/   \_\__,_|_|  \__, |\__,_|_.__/ \___| |____/ 
+                  |___/                          
+<?xml version="1.0"?>
+<!DOCTYPE hh SYSTEM "sml.dtd">
+<Meisterschaft typ="WM">
+  <Beginn> 0.0.0 </Beginn>
+  <Ende> 0.0.-10 </Ende>
+  <Mannschaft id="man1">
+    <Name> Menschen </Name>
+    <Land> &#xDC;berall </Land>
+    <Trainer> Das Land </Trainer>
+    <Spieler position="Torwart">
+      Mensch 1
+    </Spieler>
+    <Spieler position="Verteidiger">
+      Mensch 2
+    </Spieler>
+  </Mannschaft>
+  <Mannschaft id="man2">
+    <Name> Aliens </Name>
+    <Spieler position="Stuermer">
+      Alien 1
+    </Spieler>
+    <Spieler position="Stuermer">
+      Alien 2
+    </Spieler>
+    <Erfolg>
+      <Jahr> 30 BC </Jahr> haben die Aliens die
+      halbe Welt zerh&#xF6;rt und tragen seit dem
+      den Titel <Titel> Super Aliens </Titel>.
+      Manche sagen verdient.
+    </Erfolg>
+  </Mannschaft>
+  <Spiel heim="man1" gast="man2" ergebnis="aliens gewinnen"/>
+</Meisterschaft>

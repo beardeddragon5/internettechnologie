@@ -1,0 +1,32 @@
+<!DOCTYPE hh SYSTEM "sml.dtd">
+<Meisterschaft typ="WM">
+  <Beginn> 0.0.0 </Beginn>
+  <Ende> 0.0.-10 </Ende>
+  <Mannschaft id="man1">
+    <Name> Menschen </Name>
+    <Land> Überall </Land>
+    <Trainer> Das Land </Trainer>
+    <Spieler position="Torwart">
+      Mensch 1
+    </Spieler>
+    <Spieler position="Verteidiger">
+      Mensch 2
+    </Spieler>
+  </Mannschaft>
+  <Mannschaft id="man2">
+    <Name> Aliens </Name>
+    <Spieler position="Stuermer">
+      Alien 1
+    </Spieler>
+    <Spieler position="Stuermer">
+      Alien 2
+    </Spieler>
+    <Erfolg>
+      <Jahr> 30 BC </Jahr> haben die Aliens die
+      halbe Welt zerhört und tragen seit dem
+      den Titel <Titel> Super Aliens </Titel>.
+      Manche sagen verdient.
+    </Erfolg>
+  </Mannschaft>
+  <Spiel heim="man1" gast="man2" ergebnis="aliens gewinnen" />
+</Meisterschaft>

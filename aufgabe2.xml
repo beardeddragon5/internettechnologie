@@ -1,0 +1,29 @@
+<!DOCTYPE Vorlesung SYSTEM "vlml.dtd">
+<Vorlesung>
+  <Titel>Programmieren</Titel>
+  <Semester>Sommersemester</Semester>
+  <Hochschule>HAW Landshut</Hochschule>
+  <SWS>1</SWS>
+  <?myTool align=left?>
+  <!--  Anweisung an myTool -->
+  <Kapitel nummer="1" quelle="Q1">
+    <Name>Einführung</Name>
+    <Termin>1</Termin>
+  </Kapitel>
+  <Kapitel nummer="2">
+    <Name>Datentypen</Name>
+    <Termin>2</Termin>
+  </Kapitel>
+  <Kapitel nummer="3">
+    <Name>Funktionen</Name>
+    <Termin>3</Termin>
+  </Kapitel>
+  <Kapitel nummer="4">
+    <Name>Pointer</Name>
+    <Termin>4</Termin>
+  </Kapitel>
+  <Quelle quellenID="Q1">
+    <Autor>Ich</Autor>
+    <Titel>Ein lustiges Buch</Titel>
+  </Quelle>
+</Vorlesung>
