@@ -45,3 +45,7 @@ xmllint --dtdvalid vlml2.dtd aufgabe2e.xml
 figlet 'Aufgabe 3'
 
 xmllint --dtdvalid sml.dtd aufgabe3.xml
+
+figlet 'Aufgabe 3 Desc'
+
+xmllint --dtdvalid sml.dtd aufgabe3_desc.xml

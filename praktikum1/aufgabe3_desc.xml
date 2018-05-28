@@ -1,0 +1,32 @@
+<!DOCTYPE hh SYSTEM "sml.dtd">
+<Meisterschaft typ="EM">
+  <Beginn> 0.0.0 </Beginn>
+  <Ende> 0.0.-10 </Ende>
+  <Mannschaft id="manschaft1">
+    <Name> Gli Azzurri </Name>
+    <Land> Italien </Land>
+    <Trainer> Gatusso </Trainer>
+    <Spieler position="Torwart">
+     Buffon
+    </Spieler>
+    <Spieler position="Verteidiger">
+      Barzagli
+    </Spieler>
+  </Mannschaft>
+  <Mannschaft id="manschaft2">
+    <Name> La Furia Roja </Name>
+    <Land> Spanien </Land>
+    <Spieler position="Stuermer">
+      Costa
+    </Spieler>
+    <Spieler position="Mittelfeld">
+      Fast garnichts
+    </Spieler>
+    <Erfolg>
+      <Jahr> 30 BC </Jahr> haben die Spanier den Kontinet dominiert
+      und haben jetzt den Titel <Titel> Super EMista</Titel>.
+
+    </Erfolg>
+  </Mannschaft>
+  <Spiel heim="manschaft1" gast="manschaft2" ergebnis="Spanier gewinnen" />
+</Meisterschaft>

@@ -4,7 +4,7 @@
 
   <!ELEMENT Beginn (#PCDATA)>
   <!ELEMENT Ende (#PCDATA)>
-  <!ELEMENT Mannschaft (Name, Land?, Trainer?, Spieler+, Erfolg*)>
+  <!ELEMENT Mannschaft (Name, Land, Trainer, Spieler+, Erfolg*)>
     <!ATTLIST Mannschaft id ID #REQUIRED>
 
     <!ELEMENT Name (#PCDATA)>
