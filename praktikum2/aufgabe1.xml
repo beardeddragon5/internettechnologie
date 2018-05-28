@@ -1,0 +1,33 @@
+<!DOCTYPE Preisuebersicht SYSTEM "bpml.dtd">
+<Preisuebersicht datum="01.01.2001">
+  <Tankstelle paechter="p1" mineraloelgesellschaft="mg1" bewertung="3" foto="Foto">
+    <Name>dajsfjdsa</Name>
+    <Adresse>djsakf</Adresse>
+    <Geodaten>
+      <Laengengrad>123</Laengengrad>
+      <Breitengrad>123</Breitengrad>
+    </Geodaten>
+    <Beschreibung>Best</Beschreibung>
+    <Preise>
+      <Preis kraftstoffart="E10">10</Preis>
+      <Preis kraftstoffart="Super">120</Preis>
+      <Preis kraftstoffart="Diesel">1233</Preis>
+    </Preise>
+  </Tankstelle>
+  <Tankstelle paechter="p1" mineraloelgesellschaft="mg1">
+    <Name>dajsfjdsa</Name>
+    <Adresse>djsakf</Adresse>
+    <Preise>
+      <Preis kraftstoffart="SuperPlus">10</Preis>
+    </Preise>
+  </Tankstelle>
+  <Paechter id="p1">
+    <Name>Hallo</Name>
+    <Adresse>kdsajfds</Adresse>
+  </Paechter>
+  <Mineraloelgesellschaft id="mg1">
+    <Name>superland</Name>
+    <Adresse>superstraße</Adresse>
+    <Email>mega&AT;super.de</Email>
+  </Mineraloelgesellschaft>
+</Preisuebersicht>

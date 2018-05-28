@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    targetNamespace="http://xml.netbeans.org/schema/Vorlesung"
+    xmlns:vml="http://xml.netbeans.org/schema/Vorlesung">
+
+  <xsd:simpleType name="Prozent">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:minInclusive value="0"/>
+      <xsd:maxInclusive value="100"/>
+      <xsd:fractionDigits value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="Wahl">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Wahltag" type="xsd:date" />
+        <xsd:element name="Wahlbeginn" type="xsd:time" />
+        <xsd:element name="Wahlende" type="xsd:time" />
+        <xsd:element name="Partei" minOccurs="2" maxOccurs="100">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Name" type="xsd:string"/>
+              <xsd:element name="Kandidat" minOccurs="3" maxOccurs="25">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Name" type="xsd:string"/>
+                    <xsd:element name="Geburtsdatum" type="xsd:date"/>
+                    <xsd:element name="Beruf" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="Listenplatz" type="xsd:string"/>
+                    <xsd:element name="Erststimmen" type="vml:Prozent" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="isBundesweit" type="xsd:boolean" />
+            <xsd:attribute name="id" type="xsd:ID" />
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Wahlergebnis">
+          <xsd:complexType mixed="true">
+            <xsd:sequence>
+              <xsd:element name="Zweitstimme" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="vml:Prozent">
+                      <xsd:attribute name="partei" type="xsd:IDREF" />
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+
+      <xsd:attribute name="Wahltyp">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Landtagswahl"/>
+            <xsd:enumeration value="Bundestagswahl"/>
+            <xsd:enumeration value="Europawahl"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

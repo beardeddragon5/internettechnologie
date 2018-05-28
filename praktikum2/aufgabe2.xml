@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wahl Wahltyp="Landtagswahl" xmlns="http://xml.netbeans.org/schema/Vorlesung"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://xml.netbeans.org/schema/Vorlesung vml.xsd">
+  <Wahltag>2002-09-24</Wahltag>
+  <Wahlbeginn>09:00:00</Wahlbeginn>
+  <Wahlende>09:00:00</Wahlende>
+  <Partei isBundesweit="true" id="p1" >
+    <Name>dsaf</Name>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+  </Partei>
+  <Partei id="p2">
+    <Name>dsaf</Name>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+    <Kandidat>
+      <Name>dsaf</Name>
+      <Geburtsdatum>2002-09-24</Geburtsdatum>
+      <Beruf>dsaf</Beruf>
+      <Listenplatz>dsaf</Listenplatz>
+      <Erststimmen>10.00</Erststimmen>
+    </Kandidat>
+  </Partei>
+  <Wahlergebnis>
+    <Zweitstimme partei="p1">
+      10.00
+    </Zweitstimme>
+    <Zweitstimme partei="p2">
+      10.00
+    </Zweitstimme>
+  </Wahlergebnis>
+</Wahl>
