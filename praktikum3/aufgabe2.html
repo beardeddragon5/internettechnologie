@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+  <head>
+    <title> Hello World </title>
+    <style>
+      #nav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+
+      #results {
+        list-style-type: none;
+      }
+
+      #nav li {
+          float: left;
+      }
+
+      #nav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      /* Change the link color to #111 (black) on hover */
+      #nav li a:hover {
+          background-color: #111;
+      }
+    </style>
+    <script>
+      function remove(ele) {
+        document.getElementById('results').removeChild(ele)
+      }
+
+      function evalForm() {
+        let t = document.getElementById('rechner').value;
+        if (t === '') {
+          return;
+        }
+        let r = eval(t);
+        let result = document.createElement('li');
+        result.innerHTML = `${t} = ${r}`;
+        let removeBtn = document.createElement('button');
+        removeBtn.onclick = () => remove(result);
+        removeBtn.innerHTML = '-';
+        result.appendChild(removeBtn);
+        document.getElementById('results').appendChild(result);
+      }
+    </script>
+  </head>
+  <body>
+    <ul id="nav" >
+      <li><a href="#">Home</a></li>
+      <li><a href="https://google.de">Google</a></li>
+    </ul>
+    <ul id="results">
+    </ul>
+    <input id="rechner" type="text" placeholder="1+1" />
+    <span id="result"></span>
+    <button onclick="evalForm()"> Berechnen </button>
+  </body>
+</html>
